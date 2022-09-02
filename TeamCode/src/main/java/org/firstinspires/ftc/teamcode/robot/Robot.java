@@ -36,10 +36,6 @@ public class Robot {
         subsystems = MutableClassToInstanceMap.create();
         //add subsystems here
     }
-
-    public Example getExample() {
-    return (Example) (getSubsystem(Example.class).get());
-}
     
     public void wait(int time) {
         resetTimer();
