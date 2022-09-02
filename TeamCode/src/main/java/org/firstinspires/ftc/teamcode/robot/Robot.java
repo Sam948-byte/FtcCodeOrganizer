@@ -37,6 +37,10 @@ public class Robot {
         //add subsystems here
     }
 
+    public Example getExample() {
+    return (Example) (getSubsystem(Example.class).get());
+}
+    
     public void wait(int time) {
         resetTimer();
         while (opMode.opModeIsActive() && getTime() < time);
