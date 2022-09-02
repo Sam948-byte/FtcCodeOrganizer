@@ -21,6 +21,8 @@ android {
 
 dependencies {
     implementation project(':FtcRobotController')
+    implementation 'com.google.guava:guava:31.1-android'
+    
     annotationProcessor files('lib/OpModeAnnotationProcessor.jar')
 
     implementation 'com.google.guava:guava:31.1-android'
